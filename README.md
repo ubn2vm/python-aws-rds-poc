@@ -95,18 +95,12 @@ The script will print messages to the console indicating:
 
 
 ## ❗ Important: AWS Resource Cleanup
-After you have finished with this PoC, reviewed its functionality, and demonstrated it, please remember to **DELETE your AWS RDS instance** to avoid incurring any unexpected charges. This is especially crucial if your AWS Free Tier period expires or if your usage exceeds the Free Tier limits.
 
-To delete the RDS instance:
-1.  Navigate to the AWS RDS console.
-2.  Select the DB instance you created for this PoC.
-3.  Click on "Actions" -> "Delete".
-4.  You will likely be asked if you want to create a final snapshot. For a PoC, you can typically skip this to save costs (uncheck the option or choose not to create one). You will then need to confirm the deletion by typing "delete me" or similar.
+**Author's Demo Instance Availability:**
+Please note: The AWS RDS instance set up by the author for this PoC demonstration will be available for review until **June 11, 2025**. After this date, it will be decommissioned to manage AWS resources and costs.
+
+**For Your Own Instances:**
+If you create your own AWS RDS instance to test this PoC, remember to **delete it promptly** from the AWS RDS console after use. This is crucial to avoid unexpected charges, especially if you exceed AWS Free Tier limits or after the Free Tier period ends. (To delete: In the RDS console, select your instance, then choose Actions > Delete, and confirm.)
 
 ## Disclaimer
-This project is a Proof of Concept (PoC) created for demonstration and learning purposes only. It is **not intended for use in a production environment** without significant further development and enhancements. Key areas that would require attention for production use include, but are not limited to:
-* **Security:** Implementing robust security measures such as least-privilege IAM roles, network segmentation beyond basic security groups, encryption at rest and in transit handled appropriately, and secure credential management (e.g., AWS Secrets Manager instead of `.env` files for application deployment).
-* **Error Handling:** More comprehensive error handling and logging mechanisms.
-* **Configuration Management:** Using tools like AWS CloudFormation, AWS CDK, or Terraform for Infrastructure as Code (IaC) rather than manual console setup.
-* **Scalability & Performance:** Designing for scalability and performance based on expected load.
-* **Testing:** Implementing unit, integration, and potentially end-to-end tests.
+This project is a Proof of Concept (PoC) intended for demonstration and learning purposes only. It is **not suitable for production environments** without significant enhancements in areas such as security, error handling, scalability, and configuration management.
