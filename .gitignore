@@ -192,3 +192,15 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Environment variables
+.env
+
+# Virtual environment (根據您的虛擬環境資料夾名稱調整)
+venv/
+my_poc_env/ 
+*.pyc
+__pycache__/
+
+# IDE specific (VS Code might add this automatically if you chose a Python template)
+.vscode/
